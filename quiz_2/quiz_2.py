@@ -87,11 +87,12 @@ def uniquely_produced_by_rule(line):
     count = 0
     length = len(line)
     # 其实length<=1，count肯定不唯一，所以并不需要看length<=1的情况
-    # 所以，下面的条件中是只需要判断length>=2的情况就行
+    # 因此，下面的条件中是只需要判断length>=2的情况就行
     if length >= 2:
-        # 循环得出字符串并于line对比
+        # 每次循环得出字符串都要与line对比
         for rule_nb in range(16):
              string = get_string(rule_nb, line[0], line[1], length)
+             # 如果相等，就说明找到规则了
              if line == string:
                  # 计算count的值
                  count += 1
