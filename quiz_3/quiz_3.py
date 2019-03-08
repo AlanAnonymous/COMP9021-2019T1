@@ -27,7 +27,7 @@ def length_of_longest_increasing_sequence(L):
       if LL[i] <= LL[i + 1]:
         count += 1
       # 判断条件2：>，就停止count+=1，找出较大值，并重置count=1，也就是开始新的一轮判断
-      # 然后防止list中前一个始终<=后一个的情况，使得程序不会进行第二个判断条件
+      # 然后or后面的语句是为了防止list中前一个始终<=后一个的情况，使得程序不会进行第二个判断条件
       if (LL[i] > LL[i + 1]) or (i + 1 == len(LL) - 1):
         the_max = max(the_max, count)
         count = 1
