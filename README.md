@@ -12,4 +12,6 @@
 
 ---------------------------
 请勿抄袭！
+Please do not plagiarise!
 抄袭将面临官方邮件“警告”！
+Otherwise, there will be a serious penalty. 
