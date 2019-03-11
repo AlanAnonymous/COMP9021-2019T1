@@ -13,7 +13,7 @@
 ---------------------------
 请勿抄袭！
 
-Please do not plagiarise!
+Please do not plagiarism!
 
 抄袭将面临官方邮件“警告”！
 
