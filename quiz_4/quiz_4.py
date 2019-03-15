@@ -67,8 +67,8 @@ with gzip.open(filename) as csvfile:
             for i in range(4, number_of_years + 4):
                 # 此行的此列有数据才继续(line[i]代表当前这一行的第i列)
                 if line[i]:
-                    # csv文件的的数据几乎都是浮点型（少量整型），所以需要转化为float型
-                    # 并且，转化为float型才行比较浮点型数据的大小
+                    # csv文件的的数据几乎都是浮点型（少量整型），但是读取数据的时候是字符型，所以需要将str型转化为float型
+                    # 并且，转化为float型比较数据的大小才不会出错
                     float_line_i = float(line[i])
                     # 先将国家，年份（年份需要稍微计算一下），value(float型)都记录下来
                     List.append([line[0], i - 4 + first_year, float_line_i])
@@ -92,7 +92,7 @@ with gzip.open(filename) as csvfile:
 if max_value is not None:
     # 从List中取出元素（每个元素中都包含3个变量）
     for [Countries, Years, Value] in List:
-        # 判断两个float型的数是否相等（注意：这里是可以用 == 比较的，原因自己查，或者问老师）
+        # 判断两个float型的数是否相等（注意：这里是可以用 == 比较的）
         if Value == max_value:
             # Value等于max_value的话，就说明当前元素是需要被添加进字典中的
             # 下面就是将特定数据添加进字典的操作（比较容易理解的一种写法）
