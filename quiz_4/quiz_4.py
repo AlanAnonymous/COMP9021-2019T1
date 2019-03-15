@@ -39,7 +39,7 @@ countries_for_max_value_per_year = {}
     
     第4步：建立字典，也就是将这个value等于max_value的元素中的year作为字典的keys，countrie作为字典的values
     
-    第5步：根据题目要求，输出的max_value可能是整型，也可能是float型，所有需要修正max_value
+    第5步：根据题目要求，输出的max_value可能是整型，也可能是float型，所以需要修正max_value
     第6步：根据题目要求，字典应该根据年份排序，不过输出代码中已经写好，所以不需要进行此步骤
 '''
 
