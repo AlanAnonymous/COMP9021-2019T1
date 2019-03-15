@@ -79,7 +79,7 @@ with gzip.open(filename) as csvfile:
                         max_value = float_line_i
                     # 否则，line[i]存在，但max_value不为None，也就是max_value存在
                     else:
-                        # 那么比较两个字符串（字符串看起来是一串数字）的大小
+                        # 那么比较两个浮点型数据的大小
                         # 若max_value不是最大，将其替换。否则不变
                         if max_value < float_line_i:
                             max_value = float_line_i
