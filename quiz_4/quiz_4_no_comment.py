@@ -59,9 +59,8 @@ if max_value is not None:
                 countries_for_max_value_per_year[Years].append(Countries)
 
 
-if max_value is not None:
-    if max_value % 1 == 0:
-        max_value = int(max_value)
+if max_value is not None and max_value % 1 == 0:
+    max_value = int(max_value)
 
 
 if max_value is None:
