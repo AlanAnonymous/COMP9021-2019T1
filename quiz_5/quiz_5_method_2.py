@@ -65,7 +65,7 @@ def code_derived_set(encoded_set):
     string = ''
     # 范围的上界需要是index_list中的最大数加上1
     # 可以将这个string当成长度为max(index_list) + 1的一串0
-    # 然后在这个由0组成的string的特定的位置的值改成1
+    # 然后在这个由0组成的string中的特定的位置的值改成1
     # 因为string中是不可以修改元素的值的，所以用下面这种加法形式
     for j in range(max(index_list) + 1):
         # 有的话填1，没有的话填0
