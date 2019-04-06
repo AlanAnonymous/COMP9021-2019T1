@@ -17,7 +17,7 @@ def display_grid():
 
 
 # interesting mothod... no optimization
-# low time complexity than other method
+# lower time complexity than other method
 # time complexity: O(n^2)
 
 
