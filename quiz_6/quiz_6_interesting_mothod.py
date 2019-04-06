@@ -23,6 +23,7 @@ def display_grid():
 
 def size_of_largest_isosceles_triangle():
 	length = len(grid)
+	
 	# up:
 	#  * * * * *
 	#    * * *
