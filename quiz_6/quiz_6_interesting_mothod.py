@@ -17,7 +17,10 @@ def display_grid():
 
 
 # interesting mothod... no optimization
+# low time complexity than other method
 # time complexity: O(n^2)
+
+
 def size_of_largest_isosceles_triangle():
 	length = len(grid)
 	# up:
