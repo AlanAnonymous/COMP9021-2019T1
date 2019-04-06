@@ -69,7 +69,7 @@ def Modify(k):
 ### original FUNCTION ###
 # find the position of apex of triangle, then, 'check' next line/column
 # i.e.
-# 	1	<---- find this point
+#   1	<---- find this point
 # 2 0 3	<---- then, 'check' next line
 def size_of_largest_isosceles_triangle():
     # pass
