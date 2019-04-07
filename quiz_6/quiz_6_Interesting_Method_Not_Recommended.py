@@ -18,8 +18,7 @@ def display_grid():
 
 # interesting method with optimization
 # actually, this is 'Dynamic Programming'
-# However, it's not necessary to understand what the 'Dynamic Programming' is.
-# 
+# However, it's not necessary to know what the 'Dynamic Programming' is and understand how it works.
 # time complexity: O(n^2)
 
 
