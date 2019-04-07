@@ -40,7 +40,7 @@ def size_of_largest_isosceles_triangle():
 				# find the position where new_grid[i][j] != 0
 				if new_grid[i][j]:
 					# 'Dynamic Programming':
-					# choose the one direction: up
+					# choose one direction: up
 					#  * * * * *
 					#    * * *
 					#      *
