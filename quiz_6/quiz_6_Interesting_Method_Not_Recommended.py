@@ -32,7 +32,7 @@ def size_of_largest_isosceles_triangle():
 		# rotate this new_grid which is two-dimensional array
 		new_grid = list(list(x)[::-1] for x in zip(*new_grid))
 		# initialize/reset matrix every time
-		# the boundary conditions can be neglected while column(matrix) >= 2 and rows(matrix) >= 1
+		# the boundary conditions can be neglected while column(matrix) >= length + 2 and rows(matrix) >= length + 1
 		matrix = [[0 for _ in range(length + 2)] for _ in range(length + 1)]
 		# traverse new_grid
 		for i in range(length):
