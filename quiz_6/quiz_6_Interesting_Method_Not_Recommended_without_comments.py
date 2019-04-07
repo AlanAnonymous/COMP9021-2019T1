@@ -26,7 +26,7 @@ def size_of_largest_isosceles_triangle():
             for j in range(length):
                 if new_grid[i][j]:
                     matrix[i+1][j+1] = 1 + min(matrix[i][j], matrix[i][j+1], matrix[i][j+2])
-                    size = max(size, max(element for line in matrix for element in line))
+        size = max(size, max(element for line in matrix for element in line))
     return size
 
 
