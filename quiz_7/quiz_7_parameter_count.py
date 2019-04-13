@@ -61,17 +61,17 @@ def Recursion(x_1, y_1, x_2, y_2, up = 0, down = 0, left = 0, right = 0, count =
             # reset this point as not visited
             grid[x_1 - 1][y_1] = True
             
-        # down / East
+        # down / South
         if 0 <= x_1 + 1 < height and grid[x_1 + 1][y_1] and down < 2:
             count = Recursion(x_1 + 1, y_1, x_2, y_2, 0, down + 1, 0, 0, count)
             grid[x_1 + 1][y_1] = True
             
-        # left / South
+        # left / West
         if 0 <= y_1 - 1 < width and grid[x_1][y_1 - 1] and left < 2:
             count = Recursion(x_1, y_1 - 1, x_2, y_2, 0, 0, left + 1, 0, count)
             grid[x_1][y_1 - 1] = True
 
-        # right / West
+        # right / East
         if 0 <= y_1 + 1 < width and grid[x_1][y_1 + 1] and right < 2:
             count = Recursion(x_1, y_1 + 1, x_2, y_2, 0, 0, 0, right + 1, count)
             grid[x_1][y_1 + 1] = True
